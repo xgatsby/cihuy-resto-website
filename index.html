@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIHUY RESTO Online</title>
+    <style>
+        :root {
+            --primary-bg: #6482AD;
+            --secondary-bg: #576B90;
+            --text-color: #F5EDED;
+            --highlight-color: #E2DAD6;
+            --accent-color: #C4DAD2;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--primary-bg);
+            font-family: Arial, sans-serif;
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        h1 {
+            color: var(--highlight-color);
+            font-size: clamp(24px, 5vw, 48px);
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+            margin: 40px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .marquee {
+            font-size: clamp(16px, 3vw, 20px);
+            color: var(--accent-color);
+            font-weight: bold;
+            margin: 20px 0;
+            padding: 15px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            overflow: hidden;
+        }
+
+        .menu {
+            background-color: var(--secondary-bg);
+            border-radius: 15px;
+            margin: 40px auto;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .menu h2 {
+            color: var(--highlight-color);
+            font-size: clamp(20px, 4vw, 28px);
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .menu ul li {
+            font-size: clamp(16px, 3vw, 18px);
+            text-align: left;
+            padding: 15px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 8px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .menu ul li:hover {
+            transform: translateY(-5px);
+            background-color: rgba(255,255,255,0.2);
+        }
+
+        .footer {
+            font-size: clamp(18px, 4vw, 24px);
+            color: var(--highlight-color);
+            margin-top: 50px;
+            padding: 20px;
+            background-color: rgba(255,255,255,0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+
+            .menu {
+                padding: 20px;
+            }
+
+            .menu ul {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 28px;
+            }
+
+            .marquee {
+                font-size: 16px;
+            }
+
+            .menu h2 {
+                font-size: 22px;
+            }
+
+            .menu ul li {
+                font-size: 16px;
+            }
+
+            .footer {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>WELCOME TO CIHUY RESTO ONLINE</h1>
+
+        <div class="marquee">
+            <marquee behavior="scroll" direction="left">Gratis choco blast setiap pemesanan > Rp 50.000</marquee>
+        </div>
+
+        <div class="menu">
+            <h2>• APPETIZER</h2>
+            <ul>
+                <li>Zuppa Soup</li>
+                <li>Pan Cake</li>
+            </ul>
+
+            <h2>• MAIN COURSE</h2>
+            <ul>
+                <li>Beef Steak</li>
+                <li>Fried Chicken</li>
+            </ul>
+
+            <h2>• DESSERT</h2>
+            <ul>
+                <li>Pudding</li>
+                <li>Chocolate</li>
+                <li>Chocolate-Strawberry</li>
+            </ul>
+
+            <h2>• FLAVORS</h2>
+            <ul>
+                <li>Vanilla</li>
+                <li>Chocolate</li>
+                <li>Chocolate-Strawberry</li>
+            </ul>
+        </div>
+
+        <div class="marquee">
+            <marquee behavior="scroll" direction="right">Terima kasih atas kunjungan Anda, semoga puas dengan pelayanan kami ☺️🙏</marquee>
+        </div>
+
+        <div class="footer">
+            CIHUY RESTO 
+        </div>
+    </div>
+</body>
+</html>
